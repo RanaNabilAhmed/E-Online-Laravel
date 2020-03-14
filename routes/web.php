@@ -79,10 +79,41 @@ Route::group(['prefix'=>'admin'],function(){
     Route::get('/role','RoleController@add_role');
     Route::post('/role','RoleController@store_role');
     Route::get('/list','RoleController@role_list');
+    Route::get('/role_delete/{id}','RoleController@role_delete');
+    Route::get('/role_edit/{id}','RoleController@role_edit');
+    Route::post('/role_per_edit','RoleController@role_per_edit');
     
+    Route::get('/permissions_list','RoleController@permissions_list');
+    Route::get('/permission_add','RoleController@permission_add');
+    Route::post('/permission_add','RoleController@permission_store');
+    Route::get('/per_delete/{id}','RoleController@per_delete');
 
 });
+// 
+//Roles routes
 
+
+// Route::get('/roles_list','roles@role_list');
+
+// Route::get('/role_add','roles@add_role');
+
+// Route::post('/role_store','roles@store_role');
+
+// Route::get('/role_delete/{id}','roles@role_delete');
+
+// Route::get('/role_edit/{id}','roles@role_edit');
+
+// Route::post('/role_per_edit','roles@role_per_edit');
+
+// Route::get('/permissions_list','roles@permissions_list');
+
+// Route::get('/permission_add','roles@permission_add');
+
+// Route::post('/permission_add','roles@permission_store');
+
+// Route::get('/per_delete/{id}','roles@per_delete');
+
+// 
 Route::get('/cartindex ','cartcontroller@index');
 Route::get('index/come','cartcontroller@showcart');
  
