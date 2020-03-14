@@ -1,0 +1,1 @@
+<input type="button" href="{{URL::to('/cart')}}">danger
