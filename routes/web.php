@@ -12,6 +12,7 @@
 */
 Route::get('/index','cartcontroller@index');
 Route::get('/admin','usercontroller@index');
+
 Route::group(['prefix'=>'/'],function(){
     Route::get('/cart/{id}','cartcontroller@addtocart');
     Route::get('/cart','cartcontroller@showcart');
