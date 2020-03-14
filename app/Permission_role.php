@@ -7,10 +7,10 @@ use Illuminate\Notifications\Notifiable;
 use jeremykenedy\LaravelRoles\Traits\HasRoleAndPermission;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class Permission extends Model
+class Permission_role extends Model
 {
     //
-    protected $table = 'permissions';
+    protected $table = 'permission_role';
     use Notifiable;
     use HasRoleAndPermission;
 }

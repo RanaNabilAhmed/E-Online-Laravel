@@ -1,4 +1,4 @@
-@extends('template/admin/layouts/default')
+@extends('backend/layout/default')
 
 @section('content')
   <!-- Content Wrapper. Contains page content -->

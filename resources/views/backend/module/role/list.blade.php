@@ -65,8 +65,8 @@
                       <td>{{ $per->slug }}</td>
                       <td>{{ $per->description }}</td>
                       <td>
-                        <a class="btn btn-warning" href="{{ URL::to('/admin/user_edit/'.$per->id) }}">Edit</a>
-                        <a class="btn btn-danger" href="{{ URL::to('/admin/per_delete/'.$per->id) }}">Delete</a>
+                        <a class="btn btn-warning" href="{{ URL::to('/admin/role_edit/'.$per->id) }}">Edit</a>
+                        <a class="btn btn-danger" href="{{ URL::to('/admin/role_delete/'.$per->id) }}">Delete</a>
                       </td>
                     </tr>
                     @endforeach
